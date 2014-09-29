@@ -1,0 +1,32 @@
+﻿@model Portfolio.Models.PortContactForm
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Contact Form</h2>
+<form action="@Url.Action("Index", "Contact")" method="post">
+    <div>
+        @Html.LabelFor(x => x.Name)
+        @Html.TextBoxFor(x => x.Name)
+        @Html.ValidationMessageFor(x => x.Name)
+    </div>
+
+    <div>
+        @Html.LabelFor(x => x.Email)
+        @Html.TextBoxFor(x => x.Email)
+        @Html.ValidationMessageFor(x => x.Email)
+    </div>
+
+    <div>
+        @Html.LabelFor(x => x.Body)
+        @Html.TextAreaFor(x => x.Body)
+        @Html.ValidationMessageFor(x => x.Body)
+    </div>
+
+    <input type="Submit" value="Submit" />
+</form>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

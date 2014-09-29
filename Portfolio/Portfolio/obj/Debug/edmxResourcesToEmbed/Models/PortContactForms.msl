@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MorganModel1StoreContainer" CdmEntityContainer="PortContactFormsEntities">
+    <EntitySetMapping Name="PortContactForms">
+      <EntityTypeMapping TypeName="MorganModel1.PortContactForm">
+        <MappingFragment StoreEntitySet="PortContactForms">
+          <ScalarProperty Name="PortContactFormID" ColumnName="PortContactFormID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

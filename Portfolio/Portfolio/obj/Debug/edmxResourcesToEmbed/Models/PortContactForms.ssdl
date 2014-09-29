@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MorganModel1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="MorganModel1StoreContainer">
+    <EntitySet Name="PortContactForms" EntityType="MorganModel1.Store.PortContactForms" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="PortContactForms">
+    <Key>
+      <PropertyRef Name="PortContactFormID" />
+    </Key>
+    <Property Name="PortContactFormID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" />
+    <Property Name="Email" Type="nvarchar" MaxLength="200" />
+    <Property Name="Body" Type="nvarchar" MaxLength="2000" />
+  </EntityType>
+</Schema>
