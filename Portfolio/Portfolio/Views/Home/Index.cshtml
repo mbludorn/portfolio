@@ -4,35 +4,44 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Home Page</h2>
+
+<style>body {background-color: lavender;}</style>
+&nbsp
+&nbsp
+&nbsp
 <div class ="Container">
 <div class="BigImage">
-    <img src ="http://www.freeartwallpapers.com/wp-content/uploads/2014/07/Cool-Rainbow-Color-Wallpaper1.jpg" width="100%" />
+    <img src ="http://www.mrwallpaper.com/wallpapers/mountains-sunshine.jpg"/>
 
 </div>
+     </div>
  
-<div class ="AboutMe">
+    <div style="text-align:center">
+
+<div class ="AboutMe test">
     
-    <h1> About Me</h1>
-    <ul>
-        <li>Education</li>
-        <li>Work Experience</li>
-    </ul>
+    <h1><a href="@Url.Action("Index", "About")"> About Me</a></h1>
+      
+        <p style ="text-align:center; color:darkviolet;"> Click Here To Learn More About My </p>
+        <p style ="text-align:center; color:darkviolet;"> Education And Work Experience </p>
+    
 </div>
 
-<div class ="MyWork">
-    <h1> My Work </h1>
-    <ul>
-        <li> In Class Work </li>
-    </ul>
+<div class ="MyWork test">
+    <h1> <a href="@Url.Action("Index", "Work")"> My Work</a></h1>
+    
+        <p style ="text-align:center; color:darkviolet;"> Click Here For Some Examples Of  </p>
+        <p style ="text-align:center; color:darkviolet;"> In Class Projects </p>
+    
 </div>
 
-<div class ="Contacts">
-    <h1> Contacts </h1>
-    <ul>
-        <li> Contacts </li>
-    </ul>
+<div class ="Contacts test">
+    <h1><a href="@Url.Action("Index", "Contact")">Contact Me</a></h1>
+    
+        <p style ="text-align:center; color:darkviolet;"> Click Here To Get In Contact </p>
+        <p style ="text-align:center; color:darkviolet;"> With Me Via Email </p>
+    
 </div>
 
-
+       
     </div>

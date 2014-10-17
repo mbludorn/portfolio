@@ -1,0 +1,15 @@
+﻿@model Portfolio.Models.PortContactForm
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<p>
+    Are you sure you want to delete @Model.Name's Contact Form?
+</p>
+
+<form action="@Url.Action("DeleteConfirm", "Submitted", new { id = Model.PortContactFormID })" method="post">
+    <input type="submit" value="Submit" />
+        </form>

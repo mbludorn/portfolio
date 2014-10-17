@@ -130,11 +130,34 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\GuessThatNumberController.cs" />
+    <Compile Include="Controllers\HangmanController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PokerController.cs" />
     <Compile Include="Controllers\SubmittedController.cs" />
     <Compile Include="Controllers\WorkController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Contactajax.cs" />
+    <Compile Include="Models\ContactValidation.cs" />
+    <Compile Include="Models\GameScores.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GameScores.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GameScores.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GameScores.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GameScores.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GameScores.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GameScores1.cs">
+      <DependentUpon>GameScores.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PortContactForm.cs">
       <DependentUpon>PortContactForms.tt</DependentUpon>
@@ -154,7 +177,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PortContactForms.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\PortContactFormValidation.cs" />
     <Compile Include="Models\PortfolioContactForm.cs">
       <DependentUpon>PortfolioContactForms.tt</DependentUpon>
     </Compile>
@@ -176,6 +198,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Thank You Page.jpg" />
+    <Content Include="Content\thankyou.png" />
+    <Content Include="Content\about me pictures.jpg" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -266,7 +291,26 @@
       <DependentUpon>PortContactForms.edmx</DependentUpon>
       <LastGenOutput>PortContactForms.cs</LastGenOutput>
     </Content>
+    <EntityDeploy Include="Models\GameScores.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GameScores.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\GameScores.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GameScores.edmx</DependentUpon>
+      <LastGenOutput>GameScores.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\GameScores.edmx.diagram">
+      <DependentUpon>GameScores.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\GameScores.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GameScores.edmx</DependentUpon>
+      <LastGenOutput>GameScores.cs</LastGenOutput>
+    </Content>
+    <Content Include="Content\Untitled-3.indd" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Scripts\JavaScript1.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -280,9 +324,12 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
+    <Content Include="Scripts\Main.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -293,11 +340,14 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Contact\Index.cshtml" />
-    <Content Include="Views\Contact\Thank You!.cshtml" />
+    <Content Include="Views\Contact\ThankYou.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Views\Work\Index.cshtml" />
+    <Content Include="Views\Hangman\Index.cshtml" />
+    <Content Include="Views\GuessThatNumber\Index.cshtml" />
+    <Content Include="Views\Poker\Index.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

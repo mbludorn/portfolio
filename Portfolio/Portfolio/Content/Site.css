@@ -62,30 +62,54 @@ textarea {
 
 .Container{
     display: inline;
+    
 }
 
 .AboutMe{
     display:inline-block;
-    margin-top: 10px;
+    margin-top: 15px auto;
     margin-bottom: 25px;
-    margin-right: 200px;
+    margin-right: 20px;
     margin-left: 50px;
+    border: 5px solid lightblue;
+    border-style:groove;
+    border-float: left;
+    box-shadow: 5px 10px 5px;
+    width = "20%";
+
+    
+}
+
+.test {
+display:inline-block;
+width:20%;
 }
 
 .MyWork{
     display:inline-block;
-    margin-top: 10px;
+    margin-top: 15px auto;
     margin-bottom: 25px;
-    margin-right: 200px;
-    margin-left:200px;
+    margin-right: 20px;
+    margin-left:20px;
+    border: 5px solid lightblue;
+    border-style:groove;
+    /*border-float: center;*/
+    box-shadow: 5px 10px 5px;
+    width: "20%";
+    
 }
 
 .Contacts{
     display:inline-block;
-    margin-top: 10px;
+    margin-top: 15px auto;
     margin-bottom: 25px;
     margin-right: 50px;
-    margin-left: 200px;
+    margin-left: 20px;
+    border: 5px solid lightblue;
+    border-style: groove;
+    border-float: right;
+    box-shadow: 5px 10px 5px;
+    width: "20%";
 }
 
 .footer{
@@ -100,45 +124,263 @@ textarea {
     float:left;
 }
 
-.WorkImagesSection1{
-    display: inline
+
+
+.BigImage img {
+    align-content: center;
+    width: 1585px;
+    height: 350px;
+    margin-left:0px auto;
+    margin-right:0px auto;
+    margin-bottom: 30px;
 }
 
-.WorkImageOne{
-    display:inline-block;
-       margin-top: 30px;
-    margin-bottom: 250px;
-    margin-right: 400px;
-    margin-left: 300px;
+
+
+.hide {
+    display:none;
 }
 
-.WorkImageTwo{
-    display:inline-block;
-      margin-top: 30px;
-    margin-bottom: 250px;
-    margin-right: 400px;
-    margin-left: 300px;
-}
-
-.WorkImagesSection2{
+.image-next{
+    cursor:pointer;
+    border: 5px solid black;;
+    background-color:white;
+    width: 85px;
+    font-size:24px;
     display:inline;
+    margin-left:355px;
+
+}
+.image1-next{
+    cursor:pointer;
+    border: 5px solid black;
+    background-color:white;
+    width: 85px;
+    font-size:24px;
+    display:inline;
+     margin-left:355px;
 }
 
-.WorkImageThree{
-    display:inline-block;
-      margin-top: 30px;
-    margin-bottom: 250px;
-    margin-right: 400px;
-    margin-left: 300px;
+.image2-next{
+    cursor:pointer;
+    border: 5px solid black;
+    background-color:white;
+    width: 85px;
+    font-size:24px;
+    display:inline;
+     margin-left:355px;
 }
 
-.WorkImageFour{
-    display:inline-block;
-         margin-top: 30px;
-    margin-bottom: 250px;
-    margin-right: 400px;
-    margin-left: 300px;
+.image-back{
+    cursor:pointer;
+    border: 5px solid black;;
+    background-color:white;
+    width: 85px;
+    font-size:24px;
+    display:inline;
+    margin-left:12px;
 }
+.image1-back{
+    cursor:pointer;
+    border: 5px solid black;
+    background-color:white;
+    width: 85px;
+    font-size:24px;
+    display:inline;
+    margin-left:12px;
+}
+
+.image2-back{
+    cursor:pointer;
+    border: 5px solid black;
+    background-color:white;
+    width: 85px;
+    font-size:24px;
+    display:inline;
+    margin-left:12px;
+}
+
+
+
+nav{
+    /*text-align:center;
+    font-weight:bold;
+    color:darkviolet;*/
+}
+
+nav a {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    box-shadow: 0px 0px 1px black;
+    font-family: 'Times New Roman';
+    padding: 0 25px;
+    line-height: 1.8em;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 1px rgba(255,255,255,0.4);
+    text-decoration: none;
+    color: black;
+    background: black;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.5))), white;
+    background-image: -moz-linear-gradient(top, black 0%, #000000 120%);
+    background-image: -ms-linear-gradient(top, black 0%, #000000 120%);
+    border-left: 1px solid rgba(255,255,255,0.2);
+    border-right: 1px solid rgba(0,0,0,0.2);
+}
+nav a:hover {
+    padding: 0 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFF;
+    text-shadow: 0px 0px 1px rgba(255,255,255,0.8);
+    background: #777;
+}
+.footer.footerleft{
+    /*text-align:center;*/
+    color:darkviolet;
+    font-weight:bold;
+}
+
+.footer.footright{
+    /*text-align:center;*/
+    color:darkviolet;
+    font-weight:bold;
+}
+
+.work{
+    /*display:inline-block;*/
+    text-align:center;
+    /*margin-left:50PX;*/
+}
+
+.gamebuttons {
+    font-size:13px;
+    text-align:center;
+    margin-left:50px;
+        
+}
+
+.PlayGame{
+    text-align:center;
+    font-size:13px;
+}
+
+.pokerdetils{
+    font-size:15px;
+    font-family:'Comic Sans MS', cursive;
+}
+
+.BackButton {
+    cursor:pointer;
+    border: 5px solid black;
+    background-color:white;
+    width: 150px;
+    font-size:12px;
+    text-align:center;
+    margin-left:12px;
+
+}
+
+.image11{
+    text-align:center;
+}
+
+a{
+    color:black;
+}
+
+.Contact{
+    text-align:center;
+}
+
+.background {
+    /*width: 500px;
+    height: 250px;*/
+    border: 2px solid black;
+    background-image: url(about me pictures.jpg);
+}
+
+.transbox {
+    /*width: 400px;techIsFun1
+
+    height: 180px;
+    margin: 30px 50px;*/
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    margin-left:350px;
+    margin-right:350px; 
+}
+
+.AboutPage {
+    text-align:center;
+}
+
+.githublinks{
+    color:darkviolet;
+    text-align:center;
+}
+
+/*input[type="name"] {
+    width:200px;
+    height:200px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+input[type="email"] {
+   
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+input[type="message"] {
+    width:200px;
+    height:200px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}*/
+
+label{
+    display: inline-block;
+    width:100px;
+}
+
+.image active{
+    text-align:center;
+}
+
+.image hide {
+    text-align:center;
+}
+
+.image1 active{
+    text-align:center;
+}
+
+.image1 hide{
+    text-align:center;
+}
+
+.image2 active {
+    text-align:center;
+}
+
+.image2 hide {
+    text-align:center;
+}
+    
+
+
+
+
 
 
 

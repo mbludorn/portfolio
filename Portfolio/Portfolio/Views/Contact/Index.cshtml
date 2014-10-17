@@ -1,31 +1,39 @@
-﻿@model Portfolio.Models.PortContactForm
+﻿@model Portfolio.Models.Contactajax
+<style>body {background-color: lavender;}</style>
+<form id="contactajax" action="@Url.Action("Index", "Contact")" method="post">   
+     @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
 
-@{
-    ViewBag.Title = "Index";
-}
+    <fieldset>
+        <legend>Contact Me</legend>
 
-<h2>Contact Form</h2>
-<form action="@Url.Action("Index", "Contact")" method="post">
-    <div>
-        @Html.LabelFor(x => x.Name)
-        @Html.TextBoxFor(x => x.Name)
-        @Html.ValidationMessageFor(x => x.Name)
-    </div>
+        <div class="labelname">
+            @Html.LabelFor(model => model.Name)
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
 
-    <div>
-        @Html.LabelFor(x => x.Email)
-        @Html.TextBoxFor(x => x.Email)
-        @Html.ValidationMessageFor(x => x.Email)
-    </div>
+        <div class ="labelemail">
+            @Html.LabelFor(model => model.Email)
+            @Html.EditorFor(model => model.Email)
+            @Html.ValidationMessageFor(model => model.Email)
+        </div>
 
-    <div>
-        @Html.LabelFor(x => x.Body)
-        @Html.TextAreaFor(x => x.Body)
-        @Html.ValidationMessageFor(x => x.Body)
-    </div>
+        <div class ="labelmessage">
+            @Html.LabelFor(model => model.Message)
+            @Html.EditorFor(model => model.Message)
+            @Html.ValidationMessageFor(model => model.Message)
+        </di>
 
-    <input type="Submit" value="Submit" />
-</form>
+        <p>
+            <input type="submit" value="Submit" />
+        </p>
+           
+    </fieldset>
+    </form>
+
+
+
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")

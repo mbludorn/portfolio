@@ -1,0 +1,36 @@
+﻿@model Portfolio.Models.PortContactForm
+
+@{
+    ViewBag.Title = "Edit Contact Form";
+}
+
+<h2>Edit Contact Form</h2>
+<form action="@Url.Action("Edit", "Submitted")" method="post">
+    @*add a hidden field to hold the contact fomr ID*@
+    <span>
+        @Html.HiddenFor(x => x.PortContactFormID)
+    </span>
+    <div>
+        @Html.LabelFor(x => x.Name)
+        @Html.TextBoxFor(x => x.Name)
+        @Html.ValidationMessageFor(x => x.Name)
+    </div>
+
+    <div>
+        @Html.LabelFor(x => x.Email)
+        @Html.TextBoxFor(x => x.Email)
+        @Html.ValidationMessageFor(x => x.Email)
+    </div>
+
+    <div>
+        @Html.LabelFor(x => x.Body)
+        @Html.TextAreaFor(x => x.Body)
+        @Html.ValidationMessageFor(x => x.Body)
+    </div>
+
+    <input type="Submit" value="Submit" />
+</form>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

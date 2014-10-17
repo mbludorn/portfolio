@@ -8,48 +8,60 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <header>
-        <h1> Morgan Bludorn</h1>
-        <h1>Front-End Developer In Training</h1>
+    <header class="header">
+        <h1 style ="text-align:center; color:darkviolet; font-size:60px; font-family:'Comic Sans MS', cursive"> Morgan Bludorn</h1>
+        
     </header>
-    <nav>
+          
+    <nav style ="text-align:center;">
         <a href="@Url.Action("Index", "Home")">
             Home
         </a>
-        &nbsp|&nbsp
+        &nbsp||&nbsp
         <a href="@Url.Action("Index", "About")">
             About
         </a>
-        &nbsp|&nbsp
+        &nbsp||&nbsp
         <a href="@Url.Action("Index", "Work")">
             Work
         </a>
-        &nbsp|&nbsp
+        &nbsp||&nbsp
         <a href="@Url.Action("Index", "Contact")">
-            Contact Forms
+            Contact Me
         </a>
-    </nav>
-    @RenderBody()
+        </nav>
+        &nbsp
+        &nbsp
+        &nbsp
+        &nbsp
+        &nbsp
+
+    
+    
+    <section id="container" class="content-wrapper main-content clear-fix">
+        @RenderBody()
+        </section>
+
 
     <footer class ="footer">
         <div class ="footerright">
             Copyright (c) 2014 Morgan Bludorn 
         </div>
         <div class ="footleft">
-            <a href="@Url.Action("Index", "Home")">
+        <a href="@Url.Action("Index", "Home")">
             Home
         </a>
-        &nbsp|&nbsp
+        &nbsp||&nbsp
         <a href="@Url.Action("Index", "About")">
             About
         </a>
-        &nbsp|&nbsp
+        &nbsp||&nbsp
         <a href="@Url.Action("Index", "Work")">
             Work
         </a>
-        &nbsp|&nbsp
+        &nbsp||&nbsp
         <a href="@Url.Action("Index", "Contact")">
-            Contact Forms
+            Contact Me
         </a>
         </div>
     </footer>

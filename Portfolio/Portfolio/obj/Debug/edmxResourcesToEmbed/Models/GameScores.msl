@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="spMorganModelStoreContainer" CdmEntityContainer="spMorganEntities">
+    <EntitySetMapping Name="GameScores1">
+      <EntityTypeMapping TypeName="spMorganModel.GameScores1">
+        <MappingFragment StoreEntitySet="GameScores1">
+          <ScalarProperty Name="GameScoreID" ColumnName="GameScoreID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="Game" ColumnName="Game" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

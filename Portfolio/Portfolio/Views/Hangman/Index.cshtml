@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<html>
+    <style>body {background-color: lavender;}</style>
+<title style ="text-align:center;">Hangman</title>
+<h2 style ="text-align:center;">Hangman</h2>
+    <div class ="BackButton">
+    <a href="@Url.Action("Index", "Work")">
+        << Back to Work Page
+    </a>
+        &nbsp &nbsp &nbsp
+    </div>
+      <div class ="image11">
+        <img src ="http://i.imgur.com/ZBclw1D.png" />
+    </div>
+    <div class="hangmandetails">
+    <p style ="text-align:center;">The Hangman game was created by another student and me in C#.</p> 
+         <p style ="text-align:center;">We created a word bank and then used a random-number generator to </p> 
+        <p style ="text-align:center;">select a random word for the user to guess. We gave the user a certain number</p> 
+        <p style ="text-align:center;">of guesses. If the word was not guessed in so many guesses then the game was over</p>
+        <p style ="text-align:center;">and the player died. At the end of the game it will tell the user how many guesses it took them.</p>
+        </div>
+   <div class="PlayGame">
+       <a href="https://github.com/mbludorn/Hangman2/raw/master/Hangman2/Hangman2/bin/Debug/Hangman2.exe">
+             <strong>Click Here To Play The Game!!!</strong>
+       </a>
+   </div>
+    </html>
